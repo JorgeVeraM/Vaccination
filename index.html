@@ -17,16 +17,18 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
-        <script src="./js/Untitled-1.js"></script>
+        
 
     </head>
     <body>
 
     <header>
+        
         <h1>Vaccination</h1>
-          
-         <nav>
+
+         <nav class="nav">
             <ul>
+                
                 <li ><a href="">Database</a></li>
                 <li ><a href="">Education</a></li>
                 <li ><a href="">New</a></li>
@@ -34,7 +36,7 @@
                 <li ><a href="">Hoax Buster</a></li>
             </ul>
          </nav>
-       
+         <button id="menu" class="bars"><i class="fa-solid fa-bars"></i></button>
     </header>
 
         <section class="main-1">
@@ -68,14 +70,14 @@
                     <div class="border-box">
                         <div class="cuadros1">
                             <span class="icon2"><i class="fa-solid fa-location-dot"></i></span>
-                         <label for="search_location " class="label1"></i> Location</label>
+                         <label for="text" class="label1"></i> Location</label>
                          <input type="text" id="search_location" placeholder="Mexico">
                         </div>
            
                         <div class="cuadros2">
                           
-                          <label for="fecha1" class="label2"><span class="icon2"><i class="fa-solid fa-calendar-days"></i></span> Date</label>
-                          <input type="date" id="fecha1" name="fecha1" value="2019-02-22" >
+                          <label for="date" class="label2"><span class="icon2"><i class="fa-solid fa-calendar-days"></i></span> Date</label>
+                          <input type="date" id="fecha1" name="date" value="2019-02-22" >
                         </div>
        
        
@@ -160,12 +162,45 @@
                 </p>
                 <div class="lista3">
                  
-                  <ul>
-                      <li class="safe1"><span class="icon4"><i class="fa-solid fa-rectangle-xmark"></i></span> <p>Avoid alcoholic beverages</p> <span class="viñeta"><i class="fa-solid fa-angle-down"></i></span></li>
-                      <li class="safe2"><span class="icon4"><i class="fa-solid fa-circle-xmark"></i></span><p> Avoid stress</p> <span class="viñeta"><i class="fa-solid fa-angle-down"></i></span</li>
-                      <li class="safe3"><span class="icon4"><i class="fa-solid fa-brain"></i></span> <p>Eat healthy food</p> <span class="viñeta"><i class="fa-solid fa-angle-down"></i></span></li>
-                      <li class="safe4"><span class="icon4"><i class="fa-solid fa-square-check"></i></span> <p> Get enought sleep</p><span class="viñeta"><i class="fa-solid fa-angle-down"></i></span></li>
-                      <li class="safe5"><span class="icon4"><i class="fa-solid fa-heart-pulse"></i></span> <p> Exercise or physical activity</p><span class="viñeta"><i class="fa-solid fa-angle-down"></i></span></li>
+                  <ul class="informacion">
+                      <li class="safe1"><span class="icon4"><i class="fa-solid fa-rectangle-xmark"></i></span> <p>Avoid alcoholic beverages</p><button type="submit" id="dash" class="mostrar"><span class="viñeta"><i class="fa-solid fa-angle-down" id="viñeta"></i></span></button>
+                        
+                        <p class="p" id="p-1">
+                            Over time, excessive alcohol use can lead to the development of chronic diseases and other serious problems including: 
+                            High blood pressure, heart disease, stroke, 
+                            liver disease, and digestive problems. Cancer of the breast, mouth, throat, esophagus, voice box, liver, colon, and rectum.
+                        </p>
+                    
+                      </li>
+
+                      <li class="safe2"><span class="icon4"><i class="fa-solid fa-circle-xmark"></i></span><p> Avoid stress</p>  <button type="submit" id="dash2" class="mostrar"><span class="viñeta"><i class="fa-solid fa-angle-down" id="viñeta2"></i></span></button>
+
+                            
+                         <p class="p" id="p-2">
+                            when you're more stressed and more anxious, it may take a little longer to develop antibodies. So you should allow more time before
+                         </p>
+                    
+                      </li>
+                      <li class="safe3"><span class="icon4"><i class="fa-solid fa-brain"></i></span> <p>Eat healthy food</p><button type="submit" id="dash3" class="mostrar" ><span class="viñeta"><i class="fa-solid fa-angle-down" id="viñeta3"></i></span></button>
+                        <p class="p" id="p-3">
+                            A healthy diet is essential for good health and nutrition. It protects you against many chronic noncommunicable diseases, such as heart disease, diabetes and cancer.
+                        </p>
+                      </li>
+                      <li class="safe4"><span class="icon4"><i class="fa-solid fa-square-check"></i></span> <p> Get enought sleep</p><button type="submit" id="dash4" class="mostrar"><span class="viñeta"><i class="fa-solid fa-angle-down" id="viñeta4"></i></span></button>   
+                        
+                        <p class="p" id="p-4">
+                            Good sleep improves your brain performance, mood, and health. Not getting enough quality sleep regularly raises the risk of many diseases and disorders. 
+                        </p>
+                    
+                       </li>
+                      <li class="safe5"><span class="icon4"><i class="fa-solid fa-heart-pulse"></i></span> <p> Exercise or physical activity</p><button type="submit" id="dash5" class="mostrar" ><span class="viñeta5"><i class="fa-solid fa-angle-down" id="viñeta5"></i></span></button>   
+                        
+                    
+                         <p class="p" id="p-5">
+                            While formal exercise will go a long way in building muscular and aerobic strength, increasing physical activity during your daily routine has significant benefits as well.
+                         </p>
+
+                      </li>
                   </ul>
                 </div>
             
@@ -194,12 +229,12 @@
         
                     <div class="card1">
                         <span class="icon5"><i class="fa-solid fa-phone"></i></span>
-                        <label for="call" class="name">Call</label>
+                        <label for="butom" class="name">Call</label>
                         <input class="butom" type="button" value="call now">
                     </div>
                     <div class="card2">
                          <span class="icon5"><i class="fa-solid fa-comment-dots"></i></span>
-                         <label for="chat" class="name" > Chat</label>
+                         <label for="butom" class="name" > Chat</label>
                          <input class="butom" type="button" value="chat">
                     </div>
                  
@@ -210,13 +245,13 @@
                 <div class="contact2">
                      <div class="card3">
                        <span class="icon5"><i class="fa-solid fa-video"></i></span>
-                       <label for="Video call" class="name" >Video call</label>
+                       <label for="butom" class="name" >Video call</label>
                        <input class="butom" type="button" value="Video call">
                   </div>
            
                    <div class="card4">
                        <span class="icon5"><i class="fa-solid fa-envelope"></i></span>
-                       <label for="Message" class="name"> Message </label>
+                       <label for="butom" class="name"> Message </label>
                        <input class="butom" type="button" value="Message">
                     </div>
 
@@ -228,7 +263,10 @@
             
 
         </div>
-        <img class="imagen-4" src="./css/imagenes/foto.jpg" alt="">
+        <div class="imagen-4">
+            <img  src="./css/imagenes/foto.jpg" alt="">
+        </div>
+        
 
       
       
@@ -279,6 +317,7 @@
                  
                   
    
+            <script src="./js/Untitled-1.js"></script>
      </footer>
 
     </body>
